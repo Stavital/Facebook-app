@@ -1,9 +1,0 @@
-==========================Exercise Checking Report==========================
-Exercise No...........: 3
-First Student Details.: 205816705 - Stav Avital
-Second Student Details: 206126138 - Omer Bentov
-Delivery Date.........: 20- 2- 2021
-Delivered In Delay....: yes
-Delay Reason..........: we got premission from Guy. 
-Comments..............: 
-========================End Exercise Checking Report========================
