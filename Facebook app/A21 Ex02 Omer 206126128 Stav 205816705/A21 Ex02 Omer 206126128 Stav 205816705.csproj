@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{790780A5-365F-4331-8CDC-97AB73EFF280}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>A21_Ex02_Omer_206126128_Stav_205816705</RootNamespace>
+    <AssemblyName>A21 Ex02 Omer 206126128 Stav 205816705</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook">
+      <HintPath>FBApi\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="FbGraphApiWrapper">
+      <HintPath>FBApi\FbGraphApiWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountOps.cs" />
+    <Compile Include="AlbumsOps.cs" />
+    <Compile Include="EventsOps.cs" />
+    <Compile Include="FormsFactoryMethods.cs" />
+    <Compile Include="GamesOps.cs" />
+    <Compile Include="Isrategy.cs" />
+    <Compile Include="LoggedInUserData.cs" />
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.Designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFeed.Designer.cs">
+      <DependentUpon>MainFeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainOps.cs" />
+    <Compile Include="BroadcastMessage.cs" />
+    <Compile Include="SortAlbums.cs" />
+    <Compile Include="SortAlbumsByNumberOfPhotos.cs" />
+    <Compile Include="SportList.cs" />
+    <Compile Include="IActivityList.cs" />
+    <Compile Include="PostsOps.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxySportList.cs" />
+    <Compile Include="SearchOps.cs" />
+    <Compile Include="SportActivity.cs" />
+    <Compile Include="SportListEnumarable.cs" />
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFeed.resx">
+      <DependentUpon>MainFeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\SportActivity.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ContinueWithFacebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\drop-down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Facebook_1_Cake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Facebook_2_Cake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\FacebookDefaultProfilePicture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\FacebookIcom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\facebook-logo-png-38362.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\GuessingGamePicture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\searchBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\white-drop-down-arrow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
